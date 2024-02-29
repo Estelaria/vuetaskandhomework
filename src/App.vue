@@ -7,11 +7,12 @@ import navComponent from './components/navComponent.vue'
   <header>
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/whyUs">About</RouterLink>
+        <RouterLink to="/profile">Profile</RouterLink>
+        <RouterLink to="/hobbies">Hobbies</RouterLink>
+        <RouterLink to="contact">Contact</RouterLink>
       </nav>
     </div>
   </header>

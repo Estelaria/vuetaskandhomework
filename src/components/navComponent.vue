@@ -5,8 +5,8 @@ defineProps<{
 </script>
 
 <template>
-  <div class="greetings">
-
+  <div>
+hello
   </div>
 </template>
 
