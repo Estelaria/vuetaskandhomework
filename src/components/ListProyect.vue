@@ -49,7 +49,8 @@
   
 <script setup lang="ts">
 import { defineProps, defineEmits, ref } from 'vue';
-import Proyect from '../interfaces/interfaceProyect.ts';
+/*import Proyect from '../interfaces/interfaceProyect.ts';*/
+import Proyect from '../interfaces/interfaceProyect.ts'
 
 defineProps<{
     items: Proyect[],
@@ -82,7 +83,7 @@ const cancelEdit = () => {
     editedProject.value = null;
 };
 </script>
-  
+
 <style scoped>
 /* Estilos para la tabla */
 .default {
