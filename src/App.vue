@@ -13,6 +13,7 @@ import navComponent from './components/navComponent.vue'
         <RouterLink to="/profile">Profile</RouterLink>
         <RouterLink to="/hobbies">Hobbies</RouterLink>
         <RouterLink to="contact">Contact</RouterLink>
+        <RouterLink to="/work">Work</RouterLink>
       </nav>
     </div>
   </header>
