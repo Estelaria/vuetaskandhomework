@@ -13,15 +13,13 @@
                 <td>{{ item.Id }}</td>
                 <td>{{ item.Title }}</td>
                 <td>{{ item.Priority }}</td>
-                <td>{{ item.Completed }}</td>
+                <td><input type="checkbox" v-model="item.Completed" /></td>
                 <td>
                     <button @click="eliminarProyecto(item)">Eliminar</button>
                     <button @click="editarProyecto(item)">Editar</button>
                 </td>
             </tr>
         </table>
-
-        <!-- Modal de edición -->
         <div v-if="showModal" class="modal-overlay">
             <div class="modal">
                 <h2>Editar Proyecto</h2>

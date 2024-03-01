@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import ListProyect from './components/ListProyect.vue';
 import NewProyect from './components/NewProyect.vue';
 import Proyect from './interfaces/interfaceProyect.ts';
@@ -29,13 +29,21 @@ const editarProyecto = (proyecto: Proyect) => {
   alert(proyecto)
 };
 
+const totalProyectos = computed(() => listaProyectos.value.length);
+const totalCompletados = computed(() => listaProyectos.value.filter(item => item.Completed).length);
+const totalPendientes = computed(() => listaProyectos.value.filter(item => !item.Completed).length);
+
 </script>
 
 <template>
   <header>
+    <p>Total de tareas: {{ totalProyectos }}</p>
+    <p>Tareas completada: {{ totalCompletados }}</p>
+    <p>Tareas pendientes: {{ totalPendientes }}</p>
     <div class="container">
-      <NewProyect @nuevo-proyecto="agregarProyecto"/>
-      <ListProyect :items="listaProyectos" @eliminar="eliminarProyecto"   @editar="editarProyecto"/>
+
+      <NewProyect @nuevo-proyecto="agregarProyecto" />
+      <ListProyect :items="listaProyectos" @eliminar="eliminarProyecto" @editar="editarProyecto" />
     </div>
   </header>
 </template>
