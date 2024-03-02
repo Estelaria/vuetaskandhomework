@@ -1,3 +1,3 @@
 <template>
-    hi6
+    hi, NO INFORMATION
 </template>

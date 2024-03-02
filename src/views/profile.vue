@@ -1,3 +1,3 @@
 <template>
-    hi2
+    hi2, No information
 </template>
