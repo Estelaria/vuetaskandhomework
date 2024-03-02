@@ -1,8 +1,7 @@
-<!-- App.vue -->
 <template>
-  <div>
+  <div class="navbar-container">
     <h1>{{ title }}</h1>
-    <ul>
+    <ul class="navbar">
       <li v-for="(item, index) in menuItems" :key="index">
         <template v-if="index % 2 === 0">
           <router-link :to="item.path">{{ item.name }}</router-link>
@@ -12,8 +11,8 @@
         </template>
       </li>
     </ul>
-    <router-view />
   </div>
+  <router-view />
 </template>
 
 <script lang="ts">
@@ -24,7 +23,7 @@ export default defineComponent({
   name: 'App',
   data() {
     return {
-      title: 'Menu',
+      title: 'Me',
       menuItems: [
         { name: 'Home', path: '/home' },
         { name: 'Profile', path: '/profile' },
@@ -39,10 +38,40 @@ export default defineComponent({
 });
 </script>
 <style scoped>
-.container {
+.navbar-container {
   display: flex;
+  align-items: center;
+  background-color: #ff99cc; 
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+  color: white; 
   padding: 1rem;
-  border: 1rem;
-  margin-right: 1rem;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white; 
+}
+
+.navbar a:hover {
+  text-decoration: underline;
 }
 </style>
