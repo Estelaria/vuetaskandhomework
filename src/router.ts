@@ -26,7 +26,7 @@ const routes: Array<RouteRecordRaw> = [
         component: Hobbies,
     },
     {
-        path: '/contact',
+        path: '/whyUs',
         name: 'WhyUs',
         component: WhyUs,
     },

@@ -28,19 +28,19 @@ export default {
             hobbies: [
                 { 
                     title: 'Mini house', 
-                    image: 'minihouse.jpg' 
+                    image: 'src/assets/img/minihouse.jpg'
                 },
                 { 
                     title: 'Book', 
-                    image: 'book.jpg' 
+                    image: 'src/assets/img/book.jpg'
                 },
                 { 
                     title: 'Music Box', 
-                    image: 'tree.jpg' 
+                    image: 'src/assets/img/tree.jpg' 
                 },
                 { 
                     title: 'Nail', 
-                    image: 'nails.jpg' },
+                    image: 'src/assets/img/nails.jpg' },
             ],
         };
     },
@@ -49,7 +49,7 @@ export default {
 
 <style scoped>
 .hobbies {
-    background-color: #ff99cc;
+
     padding: 20px;
 }
 
