@@ -1,3 +1,3 @@
 <template>
-    hi, NO INFORMATION
+    hi
 </template>
