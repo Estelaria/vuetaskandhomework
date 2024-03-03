@@ -27,8 +27,6 @@
 <script setup lang="ts">
 import type { User } from '/interface/userInterface.ts';
 import ObjectUser from '.../data/dataUser.ts';
-
-
 import { ref } from 'vue'
 
 const Usuarios = ref<User[]>(ObjectUser);
