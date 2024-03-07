@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import type {user} from '@/interfaces/userInterface'
+import 
 
 </script>
 
 <template>
   <header>
-
+    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="about">About</RouterLink>
+    <RouterLink to="blog"><Picture></Picture>ost</RouterLink>
     <div class="wrapper">
     </div>
   </header>

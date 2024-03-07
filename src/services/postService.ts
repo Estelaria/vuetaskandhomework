@@ -1,0 +1,1 @@
+import type {user} from '@/interfaces/userInterface'
