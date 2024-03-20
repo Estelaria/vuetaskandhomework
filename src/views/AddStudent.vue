@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>Agregar Estudiante</h2>
-        <StudentForm @save="addStudent" />
+        <form @save="addStudent"></form>
     </div>
 </template>
 

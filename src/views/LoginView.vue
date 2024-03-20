@@ -11,7 +11,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { useUserStore } from '@/stores/user'
+import { useUserStore } from '@/stores/User'
 import router from '@/router/index'
 
 const inputEmail = ref('')

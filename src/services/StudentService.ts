@@ -3,7 +3,7 @@ import axios from 'axios';
 const baseUrl = 'https://65e8dab54bb72f0a9c508303.mockapi.io/dev/api/Alumnos';
 
 interface IStudent {
-    id?: number;
+    id: number;
     name: string;
     email: string;
     group: string;
