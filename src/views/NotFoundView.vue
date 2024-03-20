@@ -1,25 +1,21 @@
 <template>
-    <div class="about-title">No se encuentra disponible</div>
-    <router-link :to="{ name: 'home' }" class="login-link">Regresar</router-link>
+    <div class="about-title">
+        <i class="fa fa-exclamation" aria-hidden="true"></i>
+        <span>No se encuentra disponible</span>
+    </div>
 </template>
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+
+</script>
 
 <style scoped>
 .about-title {
     color: #FCB6D4;
     margin-bottom: 20px;
+    font-size: 24px;
 }
 
-.login-link {
-    background-color: #FCB6D4;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.login-link:hover {
-    background-color: #FF7EB9;
+.about-title i {
+    margin-right: 10px;
 }
 </style>

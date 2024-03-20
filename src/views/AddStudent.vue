@@ -1,12 +1,3 @@
-<template>
-    <div>
-        <Form>
-            <template #form>
-            </template>
-        </Form>
-        <RouterLink to="/studentlist" class="return-link">Regresar</RouterLink>
-    </div>
-</template>
 
 <script setup lang="ts">
 
@@ -21,9 +12,18 @@ const studentsStore = useStudentsStore();
 function addStudent(studentData: IStudent) {
     studentsStore.CreateStudent(studentData);
     router.push({ name: 'StudentList' });
+    alert('Estudiante Agregado con éxito');
 }
 </script>
-
+<template>
+    <div>
+        <Form>
+            <template #form>
+            </template>
+        </Form>
+        <RouterLink to="/studentlist" class="return-link">Regresar</RouterLink>
+    </div>
+</template>
 <style scoped>
 
 </style>

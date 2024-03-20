@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 </script>
 
 <template>
@@ -8,8 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
     
     <nav>
-      <RouterLink to="/" class="nav-link">Home</RouterLink>
-      <RouterLink to="/about" class="nav-link">About</RouterLink>
+      <RouterLink to="/notFoundView" class="nav-link">Home</RouterLink>
       <RouterLink to="/studentlist" class="nav-link">Student List</RouterLink>
     </nav>
     
