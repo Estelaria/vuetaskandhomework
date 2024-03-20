@@ -1,9 +1,15 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import { useCounterStore } from '@/stores/counter'
+const counterStore = useCounterStore()
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <h2>
+      {{ counterStore.count }}
+    </h2>
+    <h2>{{ counterStore.doubleCount }}</h2>
+
+    <button @click="counterStore.increment">Agregar valor</button>
   </main>
 </template>
