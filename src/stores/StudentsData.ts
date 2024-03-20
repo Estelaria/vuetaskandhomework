@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import StudentService from '@/services/StudentService'
 
 export interface IStudent {
-    id?: number;
+    id: number;
     name: string;
     email: string;
     group: string;
