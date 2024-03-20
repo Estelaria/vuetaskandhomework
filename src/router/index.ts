@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import StudentList from '../views/StudentList.vue';
 import StudentDetails from '../views/StudentDetails.vue';
 import AddStudent from '../views/AddStudent.vue';
+import LoginView from '@/views/LoginView.vue';
 
 
 const router = createRouter({
@@ -35,7 +36,13 @@ const router = createRouter({
       path: '/add',
       name: 'AddStudent',
       component: AddStudent
+    },
+    {
+    path: '/login',
+      name: 'Login',
+      component: LoginView
     }
+
   ]
 })
 

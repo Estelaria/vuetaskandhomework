@@ -40,6 +40,7 @@ onMounted(async () => {
     border-radius: 5px;
     color: white;
     text-align: left;
+    padding: 30px;
 }
 
 .return-link {
