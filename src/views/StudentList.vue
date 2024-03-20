@@ -35,6 +35,7 @@ export default {
 <style scoped>
 .student-list {
     text-align: left;
+    padding: 35px;
 }
 
 .student-link {
@@ -44,7 +45,7 @@ export default {
 }
 
 .delete-button {
-    background-color: #FCB6D4;
+    background-color:#590232 ;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -54,7 +55,7 @@ export default {
 
 .add-button {
     float: right;
-    background-color: #FCB6D4;
+    background-color: #678C30;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
