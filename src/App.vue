@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import type {user} from '@/interfaces/userInterface'
-import 
+
 
 </script>
 

@@ -6,10 +6,13 @@
     </div>
 </template>
 
+
 <script lang="ts" setup>
+
 import { useRoute } from 'vue-router'
-import PostService from '@/services/PostService'
 import { onMounted, onBeforeMount } from 'vue'
+import postService from '@/services/postService'
+
 
 const service = new PostService()
 const post = service.getPost()

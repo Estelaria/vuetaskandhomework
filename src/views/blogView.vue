@@ -9,12 +9,12 @@
     </section>
 </template>
 <script lang="ts" setup>
-import PostService from '@/services/PostService'
-import type IPost from '@/interfaces/IPost'
+import postService from '@/services/postService.ts'
+import type { user } from '@/interfaces/userInterface.ts'
 import type { Ref } from 'vue'
 import { ref, onMounted } from 'vue'
 
-const service = new PostService()
+const service = new postService()
 const posts: Ref<IPost[]> = service.getPosts()
 
 onMounted(async () => {

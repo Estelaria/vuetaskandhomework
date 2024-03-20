@@ -14,17 +14,6 @@ const router = createRouter({
       path: '/blog',
       name: 'blog',
       component: blogView
-    },
-    ,
-    {
-      path: '/post',
-      name: 'post',
-      component: postView
-    },
-    {
-      path: '/post/:id',
-      name: 'post',
-      component: postView
     }
   ]
 })
