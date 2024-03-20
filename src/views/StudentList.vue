@@ -28,7 +28,7 @@ export default {
             </li>
         </ul>
 
-        <RouterLink to="/add" class="add-button">Nuevo Estudiante</RouterLink>
+        <RouterLink to="/addStudent" class="add-button">Nuevo Estudiante</RouterLink>
     </div>
 </template>
 

@@ -15,7 +15,7 @@
 }
 
 .about-title {
-  color: #FCB6D4; /* Rosa */
+  color: #FCB6D4; 
   margin-bottom: 20px;
 }
 
